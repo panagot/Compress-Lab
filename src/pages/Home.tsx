@@ -264,6 +264,52 @@ export function Home() {
         <Reveal>
           <div className="section-head">
             <div>
+              <p className="eyebrow">After funding</p>
+              <h2>What Compress Lab becomes for the ecosystem.</h2>
+            </div>
+            <p>
+              A recommendable on-ramp beside official compression and
+              Confidential Transfer docs: CI-honest recipes, workbench tied to
+              explorer links, workshops, and awareness materials that raise
+              adoption of Foundation-priority primitives.
+            </p>
+          </div>
+        </Reveal>
+        <Reveal delay={50}>
+          <div className="compare-table">
+            <div className="compare-head">
+              <span>Surface</span>
+              <span>Now</span>
+              <span>Funded end-state</span>
+            </div>
+            <div>
+              <span>Recipes</span>
+              <span>5 paths · sketches</span>
+              <span>Live devnet · pinned SDKs · measured costs</span>
+            </div>
+            <div>
+              <span>Lab</span>
+              <span>Analyze / export</span>
+              <span>Same UX + runnable happy paths</span>
+            </div>
+            <div>
+              <span>Education</span>
+              <span>Inline gotchas</span>
+              <span>Failure cookbook + workshop pack</span>
+            </div>
+            <div>
+              <span>Awareness</span>
+              <span>Site + operator desk</span>
+              <span>Promo kit · recorded walkthrough · start-here path</span>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="shell block">
+        <Reveal>
+          <div className="section-head">
+            <div>
               <p className="eyebrow">Non-goals</p>
               <h2>Wrong shape for this toolkit.</h2>
             </div>

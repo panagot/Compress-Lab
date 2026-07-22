@@ -9,12 +9,13 @@ export function About() {
     <div className="shell">
       <header className="page-hero">
         <p className="eyebrow">Roadmap · product vision</p>
-        <h1 className="display">From local lab to full Solana DX toolkit.</h1>
+        <h1 className="display">From local lab to Solana’s default compression & privacy on-ramp.</h1>
         <p className="lede">
-          Compress Lab exists so every Anchor/TypeScript developer can adopt ZK
-          Compression and Token-2022 Confidential Transfers without a multi-repo
-          scavenger hunt. This page is the public product path — current state,
-          funded trajectory, and the two milestones that get us there.
+          Compress Lab is a public-good developer toolkit for ZK Compression and
+          Token-2022 Confidential Transfers. Today it teaches and scaffolds.
+          After successful funding it becomes a fully accessible, CI-honest,
+          awareness-backed surface that any Solana builder can finish in under
+          an hour — without inventing a new proving stack.
         </p>
         <div className="hero-actions">
           <Link to="/lab" className="btn btn-primary">
@@ -32,8 +33,8 @@ export function About() {
           </a>
         </div>
         <div className="page-toolbar">
-          <strong>Public good · MIT · Solana DX</strong>
-          <span>Recipes · Workbench · Awareness</span>
+          <strong>Public good · MIT · ecosystem DX</strong>
+          <span>Aligns with compression + Token Extensions priorities</span>
         </div>
       </header>
 
@@ -41,41 +42,44 @@ export function About() {
         <Reveal>
           <div className="section-head">
             <div>
-              <p className="eyebrow">Current state</p>
-              <h2>What Compress Lab is today.</h2>
+              <p className="eyebrow">Ecosystem role</p>
+              <h2>Why this belongs in Solana’s public-goods layer.</h2>
             </div>
             <p>
-              A working education surface and local developer workbench — not a
-              finished on-chain suite, and not vaporware.
+              The Foundation and ecosystem have shipped the hard primitives.
+              Adoption still dies in the gap between reference docs and a
+              working weekend project. Compress Lab fills that gap — the missing
+              manual, not a competing protocol.
             </p>
           </div>
         </Reveal>
         <Reveal delay={50}>
           <div className="split-3">
             <article>
-              <div className="num">01</div>
-              <h3>Recipe ledger</h3>
+              <div className="num">Priority A</div>
+              <h3>ZK Compression</h3>
               <p>
-                Five timed operator paths: rent-free profiles, mass distribution,
-                confidential transfers, permissioned issuer rails, remittance
-                corridor teaching demo — with steps, gotchas, and sketch code.
+                Cheap state unlocks real apps at scale. We teach indexer RPC
+                setup, leaf schemas, and batch fan-out so builders stop paying
+                classic rent by default.
               </p>
             </article>
             <article>
-              <div className="num">02</div>
-              <h3>Local workbench</h3>
+              <div className="num">Priority B</div>
+              <h3>Token Extensions</h3>
               <p>
-                Paste or upload code, run static analysis for common
-                compression/CT mistakes, export starters. Runs in the browser —
-                no server upload.
+                Confidential Transfers and permissioning controls are live
+                capabilities. We make deposit → apply pending → transfer and
+                freeze/default-state paths teachable.
               </p>
             </article>
             <article>
-              <div className="num">03</div>
-              <h3>Operator desk</h3>
+              <div className="num">Priority C</div>
+              <h3>Diversified demand</h3>
               <p>
-                In-product help for RPC null reads, pending balances, Circom
-                myths, and how the Lab fits next to official Light / Solana docs.
+                Recipes and demos point at social, loyalty, payments, and
+                fintech pilots — not another speculative venue — so fee demand
+                can broaden beyond memecoins.
               </p>
             </article>
           </div>
@@ -86,41 +90,141 @@ export function About() {
         <Reveal>
           <div className="section-head">
             <div>
-              <p className="eyebrow">Destination</p>
-              <h2>What it becomes when fully funded.</h2>
+              <p className="eyebrow">Current state</p>
+              <h2>What Compress Lab is today.</h2>
             </div>
             <p>
-              A complete, accessible Solana developer toolkit for cheap state and
-              confidential amounts — discoverable, workshop-ready, and safe to
-              recommend in the wild.
+              A working education surface and local developer workbench — honest
+              about sketches vs live chain, useful before the first funded
+              signature.
             </p>
           </div>
         </Reveal>
         <Reveal delay={50}>
           <div className="split-3">
             <article>
-              <div className="num">Tooling</div>
-              <h3>Live on-chain paths</h3>
+              <div className="num">01</div>
+              <h3>Recipe ledger</h3>
               <p>
-                Version-pinned Light + Token-2022 integrations with real
-                signatures, explorer links, and CI that keeps recipes honest.
+                Five timed operator paths with problems, prerequisites, steps,
+                gotchas, verification checklists, cost teaching cards, and
+                sketch code linked to upstream docs.
               </p>
             </article>
             <article>
-              <div className="num">Access</div>
-              <h3>Anyone can finish in &lt;1h</h3>
+              <div className="num">02</div>
+              <h3>Local workbench</h3>
               <p>
-                Clear setup, failure cookbook, and workbench flows so new Solana
-                builders are not gated on tribal knowledge.
+                Paste or upload code, run static analysis for common
+                compression/CT mistakes, export starters. Browser-local — no
+                server upload of source.
               </p>
             </article>
             <article>
-              <div className="num">Awareness</div>
-              <h3>Ecosystem surface</h3>
+              <div className="num">03</div>
+              <h3>Operator desk</h3>
               <p>
-                Workshop packs, demo materials, and promotional content that
-                point builders to Foundation-priority primitives — compression
-                and confidential transfers — without replacing official docs.
+                In-product Q&A for null compressed reads, pending balances,
+                Circom myths, and how we sit next to official Light / Solana
+                docs.
+              </p>
+            </article>
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="block">
+        <Reveal>
+          <div className="section-head">
+            <div>
+              <p className="eyebrow">Funded end-state</p>
+              <h2>What successful funding makes this become.</h2>
+            </div>
+            <p>
+              Not a larger landing page — a recommendable Solana DX toolkit that
+              educators, hackathon mentors, and product teams can send to new
+              builders with confidence.
+            </p>
+          </div>
+        </Reveal>
+        <Reveal delay={50}>
+          <div className="compare-table">
+            <div className="compare-head">
+              <span>Capability</span>
+              <span>Today</span>
+              <span>After funding (M1→M2)</span>
+            </div>
+            <div>
+              <span>On-chain recipes</span>
+              <span>Structural sketches</span>
+              <span>Real devnet signatures + explorer links + pinned SDKs</span>
+            </div>
+            <div>
+              <span>Workbench</span>
+              <span>Analyze / export locally</span>
+              <span>Tied to runnable happy paths + clearer error surfaces</span>
+            </div>
+            <div>
+              <span>Failure knowledge</span>
+              <span>Inline gotchas</span>
+              <span>Published failure cookbook used in workshops</span>
+            </div>
+            <div>
+              <span>Awareness</span>
+              <span>Site + help desk</span>
+              <span>Workshop pack, recorded walkthrough, promo kit</span>
+            </div>
+            <div>
+              <span>Trust model</span>
+              <span>Honest labeling</span>
+              <span>CI-checked recipes; “clone → works” as the bar</span>
+            </div>
+            <div>
+              <span>Ecosystem niche</span>
+              <span>Missing-manual prototype</span>
+              <span>Default on-ramp beside official compression & CT docs</span>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="block">
+        <Reveal>
+          <div className="section-head">
+            <div>
+              <p className="eyebrow">Who it serves</p>
+              <h2>Builders the Foundation wants unblocked.</h2>
+            </div>
+            <p>
+              If someone can write Anchor and TypeScript but has never touched
+              compression or confidential balances, this toolkit is for them.
+            </p>
+          </div>
+        </Reveal>
+        <Reveal delay={50}>
+          <div className="split-3">
+            <article>
+              <div className="num">Hackathons</div>
+              <h3>Ship the demo</h3>
+              <p>
+                Timed recipes and exportable starters so weekend teams pick
+                compressed state or private amounts instead of skipping them.
+              </p>
+            </article>
+            <article>
+              <div className="num">Product teams</div>
+              <h3>Integrate safely</h3>
+              <p>
+                Checklists and failure modes for RPC, pending balances, and
+                permissioning — before mainnet assumptions harden.
+              </p>
+            </article>
+            <article>
+              <div className="num">Educators</div>
+              <h3>Teach the primitives</h3>
+              <p>
+                Workshop scripts and awareness materials that point back to
+                Light and Solana docs, not around them.
               </p>
             </article>
           </div>
@@ -135,9 +239,9 @@ export function About() {
               <h2>Two public milestones. Clear exit criteria.</h2>
             </div>
             <p>
-              Milestone 1 hardens what exists and proves the first live chain
-              paths. Milestone 2 finishes the accessible toolkit and awareness
-              layer.
+              Milestone 1 proves live chain paths. Milestone 2 finishes the
+              accessible toolkit and awareness layer so Compress Lab can be
+              recommended ecosystem-wide.
             </p>
           </div>
         </Reveal>
@@ -149,14 +253,15 @@ export function About() {
                 Prove the path
               </h3>
               <p>
-                Make the Lab undeniable for day-one builders: polished recipes,
-                hardened workbench, and the first real on-chain happy paths.
+                Make day-one builders successful on real devnet: polished
+                recipes, hardened workbench, first live signatures.
               </p>
               <ul>
-                <li>CI + pinned SDK versions in README</li>
+                <li>CI + pinned Light / spl-token / Anchor versions in README</li>
                 <li>≥2 recipes with real devnet signatures + explorer links</li>
                 <li>Workbench wired or paired with runnable scripts for those paths</li>
                 <li>Failure cookbook v1 (RPC, pending balance, freeze, indexer lag)</li>
+                <li>Measured cost cards from our own runs (replace teaching estimates)</li>
               </ul>
             </div>
             <div className="ask-card">
@@ -165,15 +270,15 @@ export function About() {
                 Full accessible toolkit
               </h3>
               <p>
-                Compress Lab as a recommendable Solana DX surface: complete
-                recipe coverage for the core primitives, awareness materials, and
-                workshop-ready distribution.
+                Compress Lab as a complete on-ramp: core primitives covered,
+                workshops ready, awareness materials in circulation.
               </p>
               <ul>
-                <li>Remaining core recipes live on devnet (or clearly gated)</li>
+                <li>Remaining core recipes live on devnet (or explicitly gated)</li>
                 <li>Workshop facilitator pack + recorded walkthrough</li>
                 <li>Promotional one-pagers / social kit for ecosystem awareness</li>
                 <li>Adoption signal: external builders succeeding via recipes</li>
+                <li>“Start here” path documented next to official docs links</li>
               </ul>
             </div>
           </div>
@@ -184,55 +289,53 @@ export function About() {
         <Reveal>
           <div className="section-head">
             <div>
-              <p className="eyebrow">Awareness</p>
-              <h2>Education only works if developers find it.</h2>
+              <p className="eyebrow">Success looks like</p>
+              <h2>Outcomes that matter after Milestone 2.</h2>
             </div>
             <p>
-              Alongside code, Compress Lab ships materials that raise the floor
-              for Solana DX: short demos, workshop scripts, and clear “start
-              here” paths next to Light and Token-2022 official docs.
+              Public goods are judged by use. These are the signals Compress Lab
+              optimizes for — not TVL theater.
             </p>
           </div>
         </Reveal>
         <Reveal delay={50}>
-          <div className="compare-table">
-            <div className="compare-head">
-              <span>Layer</span>
-              <span>Now</span>
-              <span>After Milestone 2</span>
-            </div>
-            <div>
-              <span>Recipes</span>
-              <span>5 paths · sketch code</span>
-              <span>Live, version-pinned, CI-checked</span>
-            </div>
-            <div>
-              <span>Workbench</span>
-              <span>Local analyze / export</span>
-              <span>Tied to real happy paths</span>
-            </div>
-            <div>
-              <span>Awareness</span>
-              <span>Site + help desk</span>
-              <span>Workshop pack + promo kit</span>
-            </div>
-            <div>
-              <span>Role in ecosystem</span>
-              <span>Missing-manual prototype</span>
-              <span>Default on-ramp for compression + CT</span>
-            </div>
+          <div className="split-3">
+            <article>
+              <div className="num">DX</div>
+              <h3>&lt;1 hour to first success</h3>
+              <p>
+                A new Anchor developer reaches a compressed or confidential
+                transaction following a recipe without private Discord help.
+              </p>
+            </article>
+            <article>
+              <div className="num">Trust</div>
+              <h3>Clone → works</h3>
+              <p>
+                CI and version pins keep examples honest as Light and Token-2022
+                clients evolve.
+              </p>
+            </article>
+            <article>
+              <div className="num">Reach</div>
+              <h3>Workshops & shares</h3>
+              <p>
+                Facilitators and mentors reuse the pack; builders find Compress
+                Lab when searching for compression or CT “how do I…”.
+              </p>
+            </article>
           </div>
         </Reveal>
         <Reveal delay={80}>
           <div className="hero-actions" style={{ marginTop: '2rem' }}>
-            <Link to="/lab" className="btn btn-ink">
-              Try workbench
+            <Link to="/architecture" className="btn btn-ink">
+              How the stack fits
               <i>
                 <ArrowRight size={14} weight="bold" />
               </i>
             </Link>
-            <Link to="/architecture" className="btn btn-ghost">
-              Architecture
+            <Link to="/lab" className="btn btn-ghost">
+              Try workbench
             </Link>
           </div>
         </Reveal>

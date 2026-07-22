@@ -33,12 +33,14 @@ export function RecipeDetail() {
         <nav className="rail" aria-label="On this page">
           <a href="#problem">Problem</a>
           <a href="#outcome">Outcome</a>
+          <a href="#ecosystem">Ecosystem why</a>
           <a href="#workshop">Workshop angle</a>
           <a href="#cost">Cost card</a>
           <a href="#steps">Steps</a>
           <a href="#code">Code</a>
           <a href="#gotchas">Gotchas</a>
           <a href="#verify">Verify</a>
+          <a href="#funded">After funding</a>
         </nav>
 
         <article className="prose">
@@ -50,6 +52,11 @@ export function RecipeDetail() {
           <div id="outcome">
             <h2>Outcome</h2>
             <p>{recipe.outcome}</p>
+          </div>
+
+          <div id="ecosystem" className="callout">
+            <strong>Why this matters for Solana</strong>
+            <p style={{ margin: 0 }}>{recipe.ecosystemWhy}</p>
           </div>
 
           <div id="workshop" className="callout">
@@ -90,8 +97,8 @@ export function RecipeDetail() {
           <div id="code">
             <h2>Code sketches</h2>
             <p>
-              Sketches show structure and responsibilities. Pin exact package
-              versions in the grant repo README when wiring live SDKs.
+              Sketches show structure and responsibilities. Milestone 1 pins
+              exact package versions in the README when wiring live SDKs.
             </p>
             <CodeBlock label="Rust / Anchor sketch" code={recipe.anchorSnippet} />
             <CodeBlock label="TypeScript client sketch" code={recipe.clientSnippet} />
@@ -114,6 +121,16 @@ export function RecipeDetail() {
                 <li key={v}>{v}</li>
               ))}
             </ul>
+          </div>
+
+          <div id="funded" className="callout">
+            <strong>After funding (Milestone 1→2)</strong>
+            <p style={{ margin: 0 }}>
+              This path gains a version-pinned runnable script, a real explorer
+              link from a Compress Lab CI run, measured cost figures, and a
+              failure-cookbook entry. Until then, treat code blocks as structural
+              sketches and use the Lab workbench to draft and analyze locally.
+            </p>
           </div>
 
           <h2>Further reading</h2>

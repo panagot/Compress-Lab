@@ -12,6 +12,8 @@ export type Recipe = {
   problem: string
   outcome: string
   balkanAngle: string
+  /** Why this path matters for Solana ecosystem / Foundation priorities */
+  ecosystemWhy: string
   prerequisites: string[]
   costBefore: string
   costAfter: string
@@ -45,7 +47,9 @@ export const recipes: Recipe[] = [
     outcome:
       'A working pattern to create and read a compressed profile (username + score) on devnet, with explorer links and a cost comparison table you can paste into a grant or investor deck.',
     balkanAngle:
-      'Hackathon teams in Belgrade, Zagreb, Athens, and Sofia ship social/game MVPs weekly. This recipe removes the rent wall so demos can onboard hundreds of wallets without a treasury burn.',
+      'Hackathon teams shipping social/game MVPs need cheap per-user state. This recipe removes the rent wall so demos can onboard hundreds of wallets without a treasury burn.',
+    ecosystemWhy:
+      'Solana wins when apps can onboard millions of users without state bloat. ZK Compression is a Foundation-priority primitive; this recipe turns it into a copy-paste profile pattern so games and social apps stop defaulting to classic rent-exempt PDAs.',
     prerequisites: [
       'Solana CLI + Anchor installed',
       'Devnet SOL in a test wallet',
@@ -152,7 +156,9 @@ export async function createProfileDemo(params: {
     outcome:
       'A batch distribution recipe: prepare recipient list → submit compressed mint/transfer batch → verify a sample of recipients can claim/read balances → publish cost model.',
     balkanAngle:
-      'Conference and festival ticketing across the region needs cheap fan-out. Pair with recipe 04 for optional private purchase amounts.',
+      'Conference and festival ticketing needs cheap fan-out. Pair with recipe 04 for optional private purchase amounts.',
+    ecosystemWhy:
+      'Airdrops and loyalty programs are how new users meet Solana — but classic ATA rent kills campaigns at scale. Teaching compressed distribution increases real consumer activity beyond speculative trading.',
     prerequisites: [
       'Recipe 01 completed (RPC + mental model)',
       'Mint authority keypair for a test compressed mint',
@@ -243,7 +249,9 @@ export async function runAirdropBatches(list: Recipient[]) {
     outcome:
       'Configure a Token-2022 mint with confidential transfers, create token accounts, deposit/apply pending balances, and execute a confidential transfer on devnet with a clear explanation of what remains public.',
     balkanAngle:
-      'Cross-border stablecoin flows (e.g. diaspora remittance narratives) need amount privacy with optional auditor disclosure later — not a licensed CaaS, but a honest demo path.',
+      'Cross-border stablecoin flows need amount privacy with optional auditor disclosure later — not a licensed CaaS, but an honest demo path.',
+    ecosystemWhy:
+      'Confidential Transfers are Token Extensions the ecosystem is actively pushing. Adoption stalls on the deposit → apply pending → transfer mental model. This recipe makes that path teachable and checkable.',
     prerequisites: [
       'Understanding of Token-2022 extensions',
       'Latest Solana token CLI / @solana/spl-token with CT support',
@@ -343,7 +351,9 @@ export async function confidentialTransferDemo(input: {
     outcome:
       'A mint configured so new accounts start frozen or require allowlist-style unlock; operator can freeze/thaw; export a simple CSV “policy event log” from the lab.',
     balkanAngle:
-      'Useful when talking to regional fintechs about tokenized deposits or loyalty credits under local policy — as a technical pilot, with legal clearly out of band.',
+      'Useful when talking to fintechs about tokenized deposits or loyalty credits under policy — as a technical pilot, with legal clearly out of band.',
+    ecosystemWhy:
+      'Institutions will not pilot Solana rails without on-chain control points. Token Extensions (freeze, default account state, hooks) are the right primitives; education must show them without overclaiming compliance products.',
     prerequisites: [
       'Token-2022 minting experience',
       'Clear disclaimer: demo ≠ regulated product',
@@ -429,7 +439,9 @@ export function appendPolicyLog(
     outcome:
       'A corridor UI: sender, recipient, stablecoin mint selector, confidential amount toggle, receipt with tx signature, and a cost line if the receipt PDA is compressed.',
     balkanAngle:
-      'Primary Superteam narrative — diaspora and cross-border SME payments across Balkan corridors, with workshop script in EN + optional local language one-pager.',
+      'Diaspora and cross-border SME payment narratives make a strong workshop demo — with a facilitator script in EN and optional local-language one-pager.',
+    ecosystemWhy:
+      'Solana needs diversified demand beyond memecoins. A remittance-shaped teaching app shows compression + confidential amounts composing into a consumer story reviewers and builders can demo in one sitting.',
     prerequisites: [
       'Recipes 01 and 03 complete',
       'Design disclaimer reviewed',

@@ -100,15 +100,29 @@ export function Shell() {
         <div>
           <strong>Compress Lab</strong>
           <p>
-            Public-good recipes for Solana ZK Compression (Light) and Token-2022
-            Confidential Transfers. Open developer education — wrappers and
-            teaching aids, not a new proving system.
+            Public-good Solana DX for ZK Compression (Light) and Token-2022
+            Confidential Transfers — recipes, local workbench, and a path to a
+            full accessible toolkit. Teaching layer only; official docs stay
+            canonical.
+          </p>
+          <p style={{ marginTop: '0.85rem' }}>
+            <NavLink to="/recipes">Recipes</NavLink>
+            {' · '}
+            <NavLink to="/lab">Lab</NavLink>
+            {' · '}
+            <NavLink to="/about">Roadmap</NavLink>
+            {' · '}
+            <NavLink to="/architecture">Architecture</NavLink>
+            {' · '}
+            <a href={GH} target="_blank" rel="noreferrer">
+              GitHub
+            </a>
           </p>
         </div>
         <div className="footer-meta">
-          <span>CLUSTER · DEVNET FIRST</span>
+          <span>PRIORITY · COMPRESSION + TOKEN EXTENSIONS</span>
           <span>STACK · ANCHOR · TS · LIGHT · TOKEN-2022</span>
-          <span>SCOPE · RECIPES · WORKBENCH · WORKSHOP</span>
+          <span>END-STATE · CLONE → WORKS · WORKSHOP-READY</span>
         </div>
       </footer>
       <HelpBot />

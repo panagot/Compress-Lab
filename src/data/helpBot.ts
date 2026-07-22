@@ -98,6 +98,24 @@ export const helpArticles: HelpArticle[] = [
     href: '/lab',
     hrefLabel: 'Lab export',
   },
+  {
+    id: 'funded',
+    question: 'What does Compress Lab become when complete?',
+    answer:
+      'A recommendable Solana DX on-ramp: CI-honest live recipes for compression and Confidential Transfers, workbench tied to explorer links, failure cookbook, workshop pack, and awareness materials — sitting beside official docs, not replacing them.',
+    tags: ['roadmap', 'ecosystem', 'foundation'],
+    href: '/about',
+    hrefLabel: 'Roadmap',
+  },
+  {
+    id: 'docs',
+    question: 'Should I still read official Light / Solana docs?',
+    answer:
+      'Yes. Official docs are canonical. Compress Lab is the opinionated happy path and operator checklist. When APIs move, we pin versions and link upstream.',
+    tags: ['docs', 'light', 'canonical'],
+    href: '/architecture',
+    hrefLabel: 'Architecture',
+  },
 ]
 
 export function matchHelp(query: string): HelpArticle[] {
