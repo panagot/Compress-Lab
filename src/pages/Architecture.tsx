@@ -132,8 +132,8 @@ export function Architecture() {
                 <ArrowRight size={14} weight="bold" />
               </i>
             </Link>
-            <Link to="/grant" className="btn btn-ghost">
-              Grant deliverables
+            <Link to="/about" className="btn btn-ghost">
+              Roadmap & milestones
             </Link>
           </div>
         </Reveal>

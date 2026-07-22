@@ -2,7 +2,6 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { Shell } from './components/Shell'
 import { About } from './pages/About'
 import { Architecture } from './pages/Architecture'
-import { Grant } from './pages/Grant'
 import { Home } from './pages/Home'
 import { Lab } from './pages/Lab'
 import { RecipeDetail } from './pages/RecipeDetail'
@@ -19,7 +18,7 @@ export default function App() {
           <Route path="lab" element={<Lab />} />
           <Route path="architecture" element={<Architecture />} />
           <Route path="about" element={<About />} />
-          <Route path="grant" element={<Grant />} />
+          <Route path="grant" element={<Navigate to="/about" replace />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

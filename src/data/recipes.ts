@@ -485,7 +485,7 @@ pub struct CorridorReceipt {
     verifyChecklist: [
       'Both clear and confidential paths produce signatures in simulation',
       'Receipt renders corridor id',
-      'Workshop outline PDF/MD linked from Grant page',
+      'Workshop outline published in repo docs after Milestone 2',
     ],
     furtherReading: [
       { label: 'Solana Pay', href: 'https://docs.solanapay.com/' },

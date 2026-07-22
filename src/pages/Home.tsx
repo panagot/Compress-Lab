@@ -36,7 +36,7 @@ export function Home() {
           </div>
           <p className="trust-row mono">
             Built on Light Protocol · Token-2022 · MIT open source ·{' '}
-            <Link to="/about">Who / roadmap / asks</Link>
+            <Link to="/about">Current state & milestones</Link>
           </p>
         </div>
 
@@ -60,7 +60,8 @@ export function Home() {
             <strong>What works today</strong>
             <span>
               Recipe book · local Lab · static analysis · export. On-chain
-              signatures = funded milestones (see Grant / About).
+              happy paths and full awareness pack are Milestone 1–2 — see
+              Roadmap.
             </span>
           </div>
 
@@ -87,7 +88,7 @@ export function Home() {
               </div>
               <div className="tree-row">
                 <span className="tree-dot" />
-                <span>Pin real deltas in Milestone 2</span>
+                <span>Pin real deltas on live recipes</span>
                 <span>devnet</span>
               </div>
             </div>
@@ -144,12 +145,12 @@ export function Home() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Cost card</p>
-              <h2>Why compression shows up in every grant narrative.</h2>
+              <h2>Why compression shows up in every builder narrative.</h2>
             </div>
             <p>
               Figures below are <strong>teaching aids</strong> from public
-              compression docs/community examples — Milestone 2 pins measured
-              lamports from our own devnet runs.
+              compression docs/community examples — live recipes will pin
+              measured lamports from our own devnet runs.
             </p>
           </div>
         </Reveal>
@@ -187,9 +188,9 @@ export function Home() {
               <h2>Not vaporware — open the Lab.</h2>
             </div>
             <p>
-              Kimi-style “landing only” feedback is outdated for the workbench:
-              templates, file upload, static analysis, and export ship in-browser
-              now. Wallet/devnet execution is the funded slice.
+              Templates, file upload, static analysis, and export ship
+              in-browser now. Wallet/devnet execution and the full awareness
+              pack are the public milestones on Roadmap.
             </p>
           </div>
         </Reveal>
@@ -214,11 +215,13 @@ export function Home() {
               </p>
             </article>
             <article>
-              <div className="num">03 / Funded next</div>
-              <h3>Devnet signatures</h3>
+              <div className="num">03 / Next</div>
+              <h3>
+                <Link to="/about">Milestones →</Link>
+              </h3>
               <p>
-                Wire Light + Token-2022 for ≥2 live recipes, workshop pack, failure
-                cookbook. See dual asks on About / Grant.
+                Live on-chain paths, failure cookbook, workshop and awareness
+                materials — a full accessible Solana DX toolkit.
               </p>
             </article>
           </div>
@@ -262,25 +265,25 @@ export function Home() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Non-goals</p>
-              <h2>Wrong cheque size. Wrong team shape.</h2>
+              <h2>Wrong shape for this toolkit.</h2>
             </div>
             <p>
               Restaking, fixed-rate credit, ZK bridges, and licensed compliance
-              SaaS need protocol research or legal partners — not a
-              developer-education grant. Other teams should own those.
+              SaaS need protocol research or legal partners. Compress Lab stays
+              focused on developer education and accessible tooling.
             </p>
           </div>
         </Reveal>
         <Reveal delay={70}>
           <div className="hero-actions">
             <Link to="/about" className="btn btn-ink">
-              Team, roadmap, asks
+              Roadmap & milestones
               <i>
                 <ArrowRight size={14} weight="bold" />
               </i>
             </Link>
-            <Link to="/grant" className="btn btn-ghost">
-              Grant brief
+            <Link to="/architecture" className="btn btn-ghost">
+              Architecture
             </Link>
             <a className="btn btn-ghost" href={GH} target="_blank" rel="noreferrer">
               GitHub

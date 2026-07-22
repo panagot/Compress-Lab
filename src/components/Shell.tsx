@@ -6,8 +6,8 @@ import { HelpBot } from './HelpBot'
 const links = [
   { to: '/recipes', label: 'Recipes' },
   { to: '/lab', label: 'Lab' },
-  { to: '/about', label: 'About' },
-  { to: '/grant', label: 'Grant' },
+  { to: '/about', label: 'Roadmap' },
+  { to: '/architecture', label: 'Architecture' },
 ]
 
 const GH = 'https://github.com/panagot/Compress-Lab'

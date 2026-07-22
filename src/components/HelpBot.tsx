@@ -41,7 +41,7 @@ export function HelpBot() {
       'Do I need Circom?',
       'Why is compressed account null?',
       'What can the Lab do?',
-      'Is freeze = compliance?',
+      'What is the product roadmap?',
     ],
     [],
   )

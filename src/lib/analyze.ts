@@ -158,7 +158,7 @@ export function analyzeCode(code: string, filename = 'scratch.ts'): AnalysisResu
       severity: 'info',
       title: 'Starter TODOs still open',
       detail:
-        'Expected in Lab templates. Grant delivery replaces TODOs with version-pinned SDK calls and CI.',
+        'Expected in Lab templates. Milestone 1 replaces TODOs with version-pinned SDK calls and CI.',
     })
   }
 
