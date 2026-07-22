@@ -490,8 +490,8 @@ pub struct CorridorReceipt {
     furtherReading: [
       { label: 'Solana Pay', href: 'https://docs.solanapay.com/' },
       {
-        label: 'Superteam Balkan Grants',
-        href: 'https://superteam.fun/earn/grants/solana-foundation-balkan-grants',
+        label: 'Token-2022 extensions',
+        href: 'https://solana.com/docs/tokens/extensions',
       },
     ],
   },
