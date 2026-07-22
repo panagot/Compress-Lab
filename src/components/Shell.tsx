@@ -1,14 +1,16 @@
 import { useEffect, useState } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
-import { ArrowUpRight } from '@phosphor-icons/react'
+import { ArrowUpRight, GithubLogo } from '@phosphor-icons/react'
 import { HelpBot } from './HelpBot'
 
 const links = [
   { to: '/recipes', label: 'Recipes' },
   { to: '/lab', label: 'Lab' },
-  { to: '/architecture', label: 'Architecture' },
+  { to: '/about', label: 'About' },
   { to: '/grant', label: 'Grant' },
 ]
+
+const GH = 'https://github.com/panagot/Compress-Lab'
 
 export function Shell() {
   const [scrolled, setScrolled] = useState(false)
@@ -51,8 +53,12 @@ export function Shell() {
             ))}
           </nav>
 
+          <a className="nav-icon" href={GH} target="_blank" rel="noreferrer" aria-label="GitHub">
+            <GithubLogo size={20} weight="bold" />
+          </a>
+
           <NavLink to="/lab" className="nav-cta">
-            Open lab
+            Try Lab
             <i>
               <ArrowUpRight size={14} weight="bold" />
             </i>
@@ -77,8 +83,11 @@ export function Shell() {
               </NavLink>
             ))}
             <NavLink to="/lab" onClick={() => setOpen(false)}>
-              Open lab
+              Try Lab
             </NavLink>
+            <a href={GH} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>
+              GitHub
+            </a>
           </div>
         ) : null}
       </header>

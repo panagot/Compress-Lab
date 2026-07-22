@@ -165,6 +165,23 @@ pre,
   color: var(--ink);
 }
 
+.nav-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: background 0.3s var(--ease), color 0.3s var(--ease);
+}
+
+.nav-icon:hover {
+  background: color-mix(in oklab, var(--ink) 6%, transparent);
+  color: var(--ink);
+}
+
 .nav-cta {
   display: inline-flex;
   align-items: center;
@@ -238,7 +255,8 @@ pre,
 
 @media (max-width: 860px) {
   .nav-links,
-  .nav-cta {
+  .nav-cta,
+  .nav-icon {
     display: none;
   }
   .nav-toggle {
@@ -1776,5 +1794,96 @@ section.block {
 
   .code-editor {
     min-height: 18rem;
+  }
+}
+
+.trust-row {
+  margin: 1.25rem 0 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mist);
+}
+
+.trust-row a {
+  color: var(--teal-deep);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+.status-banner {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.status-banner strong {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal-deep);
+}
+
+.status-banner span {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  font-family: var(--font-serif);
+  line-height: 1.45;
+}
+
+.compare-table {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+
+.compare-table > div {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.92rem;
+}
+
+.compare-head {
+  font-family: var(--font-mono);
+  font-size: 0.68rem !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mist);
+}
+
+.ask-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.ask-card {
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.ask-card p {
+  color: var(--ink-soft);
+  font-family: var(--font-serif);
+  max-width: 42ch;
+}
+
+.ask-card ul {
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+@media (max-width: 960px) {
+  .compare-table > div,
+  .ask-grid {
+    grid-template-columns: 1fr;
   }
 }

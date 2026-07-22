@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, ArrowUpRight } from '@phosphor-icons/react'
+import { ArrowRight, ArrowUpRight, GithubLogo } from '@phosphor-icons/react'
 import { Reveal } from '../components/Reveal'
 import { recipes, skillLabel } from '../data/recipes'
+
+const GH = 'https://github.com/panagot/Compress-Lab'
 
 export function Home() {
   return (
@@ -9,29 +11,33 @@ export function Home() {
       <section className="shell hero">
         <div>
           <p className="eyebrow">Solana · developer education · public good</p>
-          <h1 className="display">Compression & privacy, taught as craft.</h1>
+          <h1 className="display">Turn multi-day ZK integrations into weekend recipes.</h1>
           <p className="lede">
-            Compress Lab is an open builder lab for ZK Compression (Light) and
-            Token-2022 Confidential Transfers — opinionated recipes, a local
-            developer workbench, and workshop-ready content. We wrap what
-            already exists. We do not invent Circom for you, and we do not
-            pretend to replace Light.
+            Compress Lab is an open toolkit for Anchor/TypeScript builders:
+            opinionated recipes for ZK Compression (Light) and Token-2022
+            Confidential Transfers, plus a <strong>live local workbench</strong>{' '}
+            (paste, upload, analyze, export). We curate the happy path — we do
+            not reinvent Light or invent Circom for you.
           </p>
           <div className="hero-actions">
             <Link to="/lab" className="btn btn-primary">
-              Open workbench
+              Try the Lab now
               <i>
                 <ArrowRight size={14} weight="bold" />
               </i>
             </Link>
             <Link to="/recipes" className="btn btn-ghost">
-              Browse recipes
+              Explore recipes
             </Link>
-            <Link to="/grant" className="btn btn-ghost">
-              Grant brief
-              <ArrowUpRight size={16} />
-            </Link>
+            <a className="btn btn-ghost" href={GH} target="_blank" rel="noreferrer">
+              <GithubLogo size={18} weight="bold" />
+              GitHub
+            </a>
           </div>
+          <p className="trust-row mono">
+            Built on Light Protocol · Token-2022 · MIT open source ·{' '}
+            <Link to="/about">Who / roadmap / asks</Link>
+          </p>
         </div>
 
         <aside className="hero-aside">
@@ -50,31 +56,39 @@ export function Home() {
             </div>
           </dl>
 
+          <div className="status-banner">
+            <strong>What works today</strong>
+            <span>
+              Recipe book · local Lab · static analysis · export. On-chain
+              signatures = funded milestones (see Grant / About).
+            </span>
+          </div>
+
           <div className="instrument" aria-label="Merkle compression metaphor">
             <div className="instrument-head">
-              <span>Field instrument · leaf → root</span>
+              <span>Cost teaching card · illustrative</span>
               <span className="pulse" aria-hidden />
             </div>
             <div className="tree">
               <div className="tree-row">
-                <span className="tree-dot" />
-                <span>profile leaf · username + score</span>
-                <span>73 B</span>
-              </div>
-              <div className="tree-row">
                 <span className="tree-dot dim" />
-                <span>batch hashes · airdrop chunk</span>
-                <span>×50</span>
-              </div>
-              <div className="tree-row">
-                <span className="tree-dot dim" />
-                <span>validity proof · 128 B class</span>
-                <span>zk</span>
+                <span>Classic token account rent</span>
+                <span>~2M lamports</span>
               </div>
               <div className="tree-row">
                 <span className="tree-dot" />
-                <span>on-chain root · L1 composable</span>
-                <span>live</span>
+                <span>Compressed path (order of mag.)</span>
+                <span>~5K class</span>
+              </div>
+              <div className="tree-row">
+                <span className="tree-dot dim" />
+                <span>Typical teaching reduction</span>
+                <span>~99%</span>
+              </div>
+              <div className="tree-row">
+                <span className="tree-dot" />
+                <span>Pin real deltas in Milestone 2</span>
+                <span>devnet</span>
               </div>
             </div>
           </div>
@@ -86,43 +100,125 @@ export function Home() {
           <div className="section-head">
             <div>
               <p className="eyebrow">The gap</p>
-              <h2>Primitives shipped. Adoption stalled on DX.</h2>
+              <h2>Primitives shipped. Adoption stalls on three concrete pain points.</h2>
             </div>
             <p>
-              Light Protocol and Token-2022 confidential transfers are real.
-              Anchor developers still face fragmented docs, indexer RPC setup,
-              and gotchas that turn a weekend feature into a multi-day sink.
-              Compress Lab packages the happy paths Anchor/TypeScript teams
-              actually need.
+              Official docs and Light examples exist — they are reference-shaped.
+              Compress Lab is the missing manual: timed operator paths for
+              regular Anchor developers.
             </p>
           </div>
         </Reveal>
-        <Reveal delay={80}>
+        <Reveal delay={60}>
           <div className="split-3">
             <article>
-              <div className="num">01 / Honest scope</div>
-              <h3>Recipes over rocket science</h3>
+              <div className="num">Pain 01</div>
+              <h3>Wrong RPC, empty reads</h3>
               <p>
-                Copy-paste Anchor + TypeScript paths, cost cards, and failure
-                modes. No fake “ZKKit invents ZK” narrative.
+                Compression needs an indexer-aware endpoint. Classic RPCs return
+                null; builders debug their program for hours.
               </p>
             </article>
             <article>
-              <div className="num">02 / Dev workbench</div>
-              <h3>Paste, upload, analyze, export</h3>
+              <div className="num">Pain 02</div>
+              <h3>CT pending balance</h3>
               <p>
-                A real local Lab for builders: templates, file scan, static
-                checks, starter downloads. On-chain wiring is the funded
-                milestone — not a fake confirmation animation.
+                Confidential Transfers fail until deposit → apply pending →
+                transfer is explicit. Wallets often hide encrypted state.
               </p>
             </article>
             <article>
-              <div className="num">03 / Workshop craft</div>
-              <h3>Meetup-ready packs</h3>
+              <div className="num">Pain 03</div>
+              <h3>Scattered repos</h3>
               <p>
-                Hackathon and regional workshop paths: remittance UX, event
-                drops, permissioned issuer demos with clear disclaimers —
-                including Superteam Balkan distribution when relevant.
+                Setup spans Light, Token-2022, and Anchor examples. Happy paths
+                are tribal knowledge, not a weekend checklist.
+              </p>
+            </article>
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="shell block">
+        <Reveal>
+          <div className="section-head">
+            <div>
+              <p className="eyebrow">Cost card</p>
+              <h2>Why compression shows up in every grant narrative.</h2>
+            </div>
+            <p>
+              Figures below are <strong>teaching aids</strong> from public
+              compression docs/community examples — Milestone 2 pins measured
+              lamports from our own devnet runs.
+            </p>
+          </div>
+        </Reveal>
+        <Reveal delay={50}>
+          <div className="compare-table" role="table" aria-label="Cost comparison">
+            <div className="compare-head" role="row">
+              <span>Path</span>
+              <span>Classic (order of mag.)</span>
+              <span>Compressed (order of mag.)</span>
+            </div>
+            <div role="row">
+              <span>Token account / small PDA</span>
+              <span>~1.4M–2M lamports rent</span>
+              <span>~thousands of lamports class</span>
+            </div>
+            <div role="row">
+              <span>Mass fan-out (N wallets)</span>
+              <span>ATA rent × N</span>
+              <span>Batched proofs, sublinear feel</span>
+            </div>
+            <div role="row">
+              <span>Confidential amount</span>
+              <span>Public u64 (no privacy)</span>
+              <span>Hidden amount · Token-2022 CT</span>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="shell block">
+        <Reveal>
+          <div className="section-head">
+            <div>
+              <p className="eyebrow">Live today</p>
+              <h2>Not vaporware — open the Lab.</h2>
+            </div>
+            <p>
+              Kimi-style “landing only” feedback is outdated for the workbench:
+              templates, file upload, static analysis, and export ship in-browser
+              now. Wallet/devnet execution is the funded slice.
+            </p>
+          </div>
+        </Reveal>
+        <Reveal delay={70}>
+          <div className="split-3">
+            <article>
+              <div className="num">01 / Recipes</div>
+              <h3>Five named paths</h3>
+              <p>
+                Profiles · airdrop · confidential transfer · permissioned issuer
+                · remittance corridor. Each with steps, gotchas, sketches.
+              </p>
+            </article>
+            <article>
+              <div className="num">02 / Workbench</div>
+              <h3>
+                <Link to="/lab">Try it →</Link>
+              </h3>
+              <p>
+                Paste code, drop Anchor files, run Demo Analyze, download
+                starters. Nothing uploaded to a server.
+              </p>
+            </article>
+            <article>
+              <div className="num">03 / Funded next</div>
+              <h3>Devnet signatures</h3>
+              <p>
+                Wire Light + Token-2022 for ≥2 live recipes, workshop pack, failure
+                cookbook. See dual asks on About / Grant.
               </p>
             </article>
           </div>
@@ -134,17 +230,17 @@ export function Home() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Ledger</p>
-              <h2>Five recipes. One operator path.</h2>
+              <h2>Five recipes. Named. Linked.</h2>
             </div>
             <p>
-              Start with rent-free profiles, then fan-out, privacy, policy
-              rails, and a composed remittance corridor demo.
+              Each card: problem-shaped title, primitive, timebox. Open any path
+              for full steps and sketch code.
             </p>
           </div>
         </Reveal>
         <div className="ledger">
           {recipes.map((r, i) => (
-            <Reveal key={r.id} delay={i * 60}>
+            <Reveal key={r.id} delay={i * 50} eager={i < 3}>
               <Link to={`/recipes/${r.id}`} className="ledger-row">
                 <span className="num">{r.number}</span>
                 <div>
@@ -166,26 +262,30 @@ export function Home() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Non-goals</p>
-              <h2>What this grant will not fund.</h2>
+              <h2>Wrong cheque size. Wrong team shape.</h2>
             </div>
             <p>
-              Restaking markets, fixed-rate credit, ZK bridges, or licensed
-              compliance SaaS. Those are the wrong cheque size — and the wrong
-              honesty bar.
+              Restaking, fixed-rate credit, ZK bridges, and licensed compliance
+              SaaS need protocol research or legal partners — not a
+              developer-education grant. Other teams should own those.
             </p>
           </div>
         </Reveal>
         <Reveal delay={70}>
           <div className="hero-actions">
-            <Link to="/architecture" className="btn btn-ink">
-              See architecture
+            <Link to="/about" className="btn btn-ink">
+              Team, roadmap, asks
               <i>
                 <ArrowRight size={14} weight="bold" />
               </i>
             </Link>
             <Link to="/grant" className="btn btn-ghost">
-              Read grant brief
+              Grant brief
             </Link>
+            <a className="btn btn-ghost" href={GH} target="_blank" rel="noreferrer">
+              GitHub
+              <ArrowUpRight size={16} />
+            </a>
           </div>
         </Reveal>
       </section>
