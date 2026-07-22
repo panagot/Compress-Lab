@@ -158,7 +158,7 @@ export function analyzeCode(code: string, filename = 'scratch.ts'): AnalysisResu
       severity: 'info',
       title: 'Starter TODOs still open',
       detail:
-        'Expected in Lab templates. Milestone 1 replaces TODOs with version-pinned SDK calls and CI.',
+        'Expected in Lab templates. Live recipes replace TODOs with version-pinned SDK calls and CI.',
     })
   }
 
@@ -185,9 +185,9 @@ export function analyzeCode(code: string, filename = 'scratch.ts'): AnalysisResu
 
   const summary =
     errors > 0
-      ? `${errors} blocking issue(s) — fix before calling this grant-ready.`
+      ? `${errors} blocking issue(s) — fix before treating this as demo-ready.`
       : warns > 0
-        ? `${warns} warning(s) — address before workshop demo.`
+        ? `${warns} warning(s) — address before a workshop demo.`
         : 'Looks structurally sane for a starter — verify on devnet next.'
 
   return {
@@ -245,7 +245,7 @@ export function analyzeProject(files: UploadedFile[]): AnalysisResult {
       findings.push({
         severity: 'ok',
         title: 'Relevant npm dependencies present',
-        detail: 'Confirm versions against Compress Lab README pins after grant wiring.',
+        detail: 'Confirm versions against Compress Lab README pins when you wire live SDKs.',
       })
     }
   }

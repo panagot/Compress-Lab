@@ -55,11 +55,11 @@ Compress Lab is the **missing manual**: curated recipes, gotchas, cost teaching 
 - Measured cost cards from our own runs  
 
 ### Milestone 2 — Full accessible toolkit
-- Remaining core recipes live (or clearly gated)  
-- Workshop facilitator pack + recorded walkthrough  
-- Awareness / promo materials for ecosystem discoverability  
+- All five core recipes live on devnet (or clearly gated)  
+- Downloadable CLI aligned with Lab happy paths  
+- Written facilitator pack + one-pagers / start-here path  
 - Adoption signal: external builders succeeding via recipes  
-- Documented “start here” path next to official docs  
+- Ongoing maintenance as Light and Token-2022 clients evolve  
 
 Official Light and Solana docs remain **canonical**. Compress Lab packages the happy path and keeps version pins honest as upstream APIs move.
 

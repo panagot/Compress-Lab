@@ -40,7 +40,7 @@ export function RecipeDetail() {
           <a href="#code">Code</a>
           <a href="#gotchas">Gotchas</a>
           <a href="#verify">Verify</a>
-          <a href="#funded">After funding</a>
+          <a href="#roadmap">On the roadmap</a>
         </nav>
 
         <article className="prose">
@@ -61,7 +61,7 @@ export function RecipeDetail() {
 
           <div id="workshop" className="callout">
             <strong>Workshop angle</strong>
-            <p style={{ margin: 0 }}>{recipe.balkanAngle}</p>
+            <p style={{ margin: 0 }}>{recipe.workshopAngle}</p>
           </div>
 
           <h2>Prerequisites</h2>
@@ -97,8 +97,8 @@ export function RecipeDetail() {
           <div id="code">
             <h2>Code sketches</h2>
             <p>
-              Sketches show structure and responsibilities. Milestone 1 pins
-              exact package versions in the README when wiring live SDKs.
+              Sketches show structure and responsibilities. Live recipes pin
+              exact package versions in the README when SDKs are wired.
             </p>
             <CodeBlock label="Rust / Anchor sketch" code={recipe.anchorSnippet} />
             <CodeBlock label="TypeScript client sketch" code={recipe.clientSnippet} />
@@ -123,13 +123,13 @@ export function RecipeDetail() {
             </ul>
           </div>
 
-          <div id="funded" className="callout">
-            <strong>After funding (Milestone 1→2)</strong>
+          <div id="roadmap" className="callout">
+            <strong>On the roadmap (Milestone 1→2)</strong>
             <p style={{ margin: 0 }}>
               This path gains a version-pinned runnable script, a real explorer
-              link from a Compress Lab CI run, measured cost figures, and a
-              failure-cookbook entry. Until then, treat code blocks as structural
-              sketches and use the Lab workbench to draft and analyze locally.
+              link, measured cost figures, CLI support, and a failure-cookbook
+              entry. Until then, treat code blocks as structural sketches and use
+              the Lab workbench to draft and analyze locally.
             </p>
           </div>
 

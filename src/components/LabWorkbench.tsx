@@ -352,9 +352,8 @@ Next:
               Export starters for your machine.
             </h2>
             <p className="lede">
-              Reviewers and builders should leave with files, not a fake
-              “transaction confirmed” animation. On-chain wiring is the funded
-              milestone; local DX is available now.
+              Leave with files, not a fake “transaction confirmed” animation.
+              On-chain wiring is on the Roadmap; local DX is available now.
             </p>
             <div className="hero-actions">
               <button type="button" className="btn btn-primary" onClick={exportBuffer}>

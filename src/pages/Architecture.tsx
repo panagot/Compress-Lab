@@ -11,7 +11,7 @@ const stackDiagram = `[Anchor / TypeScript builder]
 │  · Recipe book + gotchas        │
 │  · Local workbench              │
 │  · Failure cookbook (M1)        │
-│  · Workshop / awareness (M2)    │
+│  · CLI + facilitator pack (M2)  │
 │  · Thin helpers (version-pinned)│
 └───────────────┬─────────────────┘
                 │ uses — never replaces
@@ -25,14 +25,15 @@ const stackDiagram = `[Anchor / TypeScript builder]
                 ▼
            Solana L1`
 
-const fundedDiagram = `Milestone 2 target flow
+const targetDiagram = `Milestone 2 target flow
 
   Builder lands on Compress Lab
            │
            ├─► Recipe checklist (CI green)
            ├─► Workbench export / analyze
            ├─► Devnet script → explorer URL
-           └─► Workshop clip / failure cookbook
+           ├─► CLI path (same happy path)
+           └─► Facilitator pack / failure cookbook
                        │
                        ▼
            Ships feature using Light + Token-2022
@@ -43,22 +44,22 @@ export function Architecture() {
     <div className="shell">
       <header className="page-hero">
         <p className="eyebrow">Architecture</p>
-        <h1 className="display">A teaching layer on top of live Solana primitives.</h1>
+        <h1 className="display">A thin tooling layer on live Solana primitives.</h1>
         <p className="lede">
-          Compress Lab sits above Light Protocol and Token Extensions. Builders
-          keep writing Anchor and TypeScript. We remove scavenger hunts across
+          Compress Lab sits above Light Protocol and Token Extensions. You keep
+          writing Anchor and TypeScript. We remove scavenger hunts across
           fragmented docs — not the need for a compression-aware RPC, and not
           the cryptography itself.
         </p>
         <div className="page-toolbar">
-          <strong>Recipes · Workbench · Awareness</strong>
-          <span>Complements official docs · does not fork them</span>
+          <strong>Recipes · Workbench · CLI path</strong>
+          <span>Complements official docs · does not replace them</span>
         </div>
       </header>
 
       <section className="block" style={{ borderTop: 'none', paddingTop: '1.5rem' }}>
         <Reveal>
-          <CodeBlock label="Stack today → funded" code={stackDiagram} sketch={false} />
+          <CodeBlock label="Stack today → complete toolkit" code={stackDiagram} sketch={false} />
         </Reveal>
 
         <Reveal delay={60}>
@@ -69,7 +70,8 @@ export function Architecture() {
               <p>
                 Timed paths with prerequisites, cost cards, gotchas, and
                 verification checklists. Content is the product — opinionated
-                happy paths for Foundation-priority features.
+                happy paths for compression, confidential transfers, and Token
+                Extensions.
               </p>
             </article>
             <article>
@@ -83,11 +85,11 @@ export function Architecture() {
             </article>
             <article>
               <div className="num">Layer C</div>
-              <h3>Thin helpers + awareness</h3>
+              <h3>CLI + thin helpers</h3>
               <p>
                 Optional version-pinned helpers around Light / spl-token — never
-                marketed as a new ZK stack. Milestone 2 adds workshop and promo
-                materials for discoverability.
+                marketed as a new ZK stack. Milestone 2 adds a downloadable CLI
+                and written facilitator materials.
               </p>
             </article>
           </div>
@@ -98,17 +100,17 @@ export function Architecture() {
         <Reveal>
           <div className="section-head">
             <div>
-              <p className="eyebrow">Funded architecture</p>
+              <p className="eyebrow">Complete architecture</p>
               <h2>What the system looks like after Milestone 2.</h2>
             </div>
             <p>
               Same layers — higher integrity. Every core recipe earns a green CI
-              path; awareness materials point builders into those paths.
+              path; CLI and written materials point builders into those paths.
             </p>
           </div>
         </Reveal>
         <Reveal delay={40}>
-          <CodeBlock label="Builder journey" code={fundedDiagram} sketch={false} />
+          <CodeBlock label="Builder journey" code={targetDiagram} sketch={false} />
         </Reveal>
         <Reveal delay={70}>
           <div className="compare-table" style={{ marginTop: '1.5rem' }}>
@@ -135,7 +137,7 @@ export function Architecture() {
             <div>
               <span>Discoverability</span>
               <span>Ecosystem channels</span>
-              <span>Workshops, demos, “start here” packaging</span>
+              <span>CLI, demos, “start here” packaging</span>
             </div>
           </div>
         </Reveal>
@@ -200,7 +202,7 @@ export function Architecture() {
                 <p>When APIs move, we pin versions and link upstream — not fork truth.</p>
               </div>
               <span className="chip">Governance</span>
-              <span className="ledger-meta">Public good</span>
+              <span className="ledger-meta">Open education</span>
             </div>
           </div>
         </Reveal>

@@ -11,8 +11,8 @@ export type Recipe = {
   stack: string[]
   problem: string
   outcome: string
-  balkanAngle: string
-  /** Why this path matters for Solana ecosystem / Foundation priorities */
+  workshopAngle: string
+  /** Why this path matters for Solana ecosystem adoption */
   ecosystemWhy: string
   prerequisites: string[]
   costBefore: string
@@ -45,11 +45,11 @@ export const recipes: Recipe[] = [
     problem:
       'Every classic Solana account pays rent-exempt lamports. A social or game app that creates a profile PDA per user hits a hard onboarding tax — often dollars per user at scale — before product value exists.',
     outcome:
-      'A working pattern to create and read a compressed profile (username + score) on devnet, with explorer links and a cost comparison table you can paste into a grant or investor deck.',
-    balkanAngle:
+      'A working pattern to create and read a compressed profile (username + score) on devnet, with explorer links and a cost comparison table you can reuse in demos or product docs.',
+    workshopAngle:
       'Hackathon teams shipping social/game MVPs need cheap per-user state. This recipe removes the rent wall so demos can onboard hundreds of wallets without a treasury burn.',
     ecosystemWhy:
-      'Solana wins when apps can onboard millions of users without state bloat. ZK Compression is a Foundation-priority primitive; this recipe turns it into a copy-paste profile pattern so games and social apps stop defaulting to classic rent-exempt PDAs.',
+      'Solana wins when apps can onboard millions of users without state bloat. ZK Compression is a core scaling primitive; this recipe turns it into a copy-paste profile pattern so games and social apps stop defaulting to classic rent-exempt PDAs.',
     prerequisites: [
       'Solana CLI + Anchor installed',
       'Devnet SOL in a test wallet',
@@ -152,10 +152,10 @@ export async function createProfileDemo(params: {
     timeMinutes: 60,
     stack: ['Compressed Token', 'TypeScript', 'Batch proofs', 'Devnet'],
     problem:
-      'Airdrops and loyalty programs die on ATA rent and signature spam. Distributing to 10k Balkan event attendees with classic SPL tokens means thousands of rent-exempt accounts and ugly UX for first-time wallets.',
+      'Airdrops and loyalty programs die on ATA rent and signature spam. Distributing to 10k event attendees with classic SPL tokens means thousands of rent-exempt accounts and ugly UX for first-time wallets.',
     outcome:
       'A batch distribution recipe: prepare recipient list → submit compressed mint/transfer batch → verify a sample of recipients can claim/read balances → publish cost model.',
-    balkanAngle:
+    workshopAngle:
       'Conference and festival ticketing needs cheap fan-out. Pair with recipe 04 for optional private purchase amounts.',
     ecosystemWhy:
       'Airdrops and loyalty programs are how new users meet Solana — but classic ATA rent kills campaigns at scale. Teaching compressed distribution increases real consumer activity beyond speculative trading.',
@@ -185,7 +185,7 @@ export async function createProfileDemo(params: {
       },
       {
         title: 'Publish the cost card',
-        body: 'Export SOL spent / recipients reached. This number is the grant demo headline.',
+        body: 'Export SOL spent / recipients reached. That ratio is the demo headline for mentors and product leads.',
       },
     ],
     gotchas: [
@@ -248,14 +248,14 @@ export async function runAirdropBatches(list: Recipient[]) {
       'Public balances leak payroll, remittance, and OTC sizes. Teams want privacy without leaving Solana L1 or inventing a bridge.',
     outcome:
       'Configure a Token-2022 mint with confidential transfers, create token accounts, deposit/apply pending balances, and execute a confidential transfer on devnet with a clear explanation of what remains public.',
-    balkanAngle:
+    workshopAngle:
       'Cross-border stablecoin flows need amount privacy with optional auditor disclosure later — not a licensed CaaS, but an honest demo path.',
     ecosystemWhy:
-      'Confidential Transfers are Token Extensions the ecosystem is actively pushing. Adoption stalls on the deposit → apply pending → transfer mental model. This recipe makes that path teachable and checkable.',
+      'Confidential Transfers are Token Extensions builders keep asking for. Adoption stalls on the deposit → apply pending → transfer mental model. This recipe makes that path teachable and checkable.',
     prerequisites: [
       'Understanding of Token-2022 extensions',
       'Latest Solana token CLI / @solana/spl-token with CT support',
-      'Devnet wallet funded for fees',
+      'Devnet wallet with SOL for fees',
     ],
     costBefore: 'N/A (privacy feature; cost is complexity, not rent)',
     costAfter: 'Extra proof-related compute/fees vs classic transfer — measure in Lab',
@@ -278,7 +278,7 @@ export async function runAirdropBatches(list: Recipient[]) {
       },
       {
         title: 'Explain disclosure story',
-        body: 'Document how an auditor with elgamal decryption authority could selectively disclose — for grant honesty, mark this as design narrative if keys are demo-only.',
+        body: 'Document how an auditor with elgamal decryption authority could selectively disclose — if keys are demo-only, label that clearly in the operator notes.',
       },
     ],
     gotchas: [
@@ -341,7 +341,7 @@ export async function confidentialTransferDemo(input: {
     id: 'permissioned-issuer',
     number: '04',
     title: 'Permissioned issuer rail',
-    subtitle: 'Freeze authority + default account state (and optional transfer hook) for a Balkan fintech demo — not licensed compliance.',
+    subtitle: 'Freeze authority + default account state (and optional transfer hook) for a fintech pilot demo — not licensed compliance.',
     skill: 'permissioning',
     difficulty: 'intermediate',
     timeMinutes: 50,
@@ -350,7 +350,7 @@ export async function confidentialTransferDemo(input: {
       'Institutions will not pilot rails where any wallet can receive and move assets without policy hooks. Full KYC SaaS is out of scope; demonstrating Token Extensions guardrails is not.',
     outcome:
       'A mint configured so new accounts start frozen or require allowlist-style unlock; operator can freeze/thaw; export a simple CSV “policy event log” from the lab.',
-    balkanAngle:
+    workshopAngle:
       'Useful when talking to fintechs about tokenized deposits or loyalty credits under policy — as a technical pilot, with legal clearly out of band.',
     ecosystemWhy:
       'Institutions will not pilot Solana rails without on-chain control points. Token Extensions (freeze, default account state, hooks) are the right primitives; education must show them without overclaiming compliance products.',
@@ -375,7 +375,7 @@ export async function confidentialTransferDemo(input: {
       },
       {
         title: 'Optional transfer hook',
-        body: 'For advanced demos, attach a transfer hook program that checks a PDA allowlist. Keep v1 optional so the grant demo still works if hook tooling shifts.',
+        body: 'For advanced demos, attach a transfer hook program that checks a PDA allowlist. Keep v1 optional so the core freeze/thaw path still works if hook tooling shifts.',
       },
       {
         title: 'Incident freeze',
@@ -389,7 +389,7 @@ export async function confidentialTransferDemo(input: {
       },
       {
         title: 'Overclaiming compliance',
-        body: 'Never market this as AML certification. Use “technical control demo” language in the grant.',
+        body: 'Never market this as AML certification. Stick to “technical control demo” language in any workshop or deck.',
       },
     ],
     anchorSnippet: `// Optional transfer-hook style allowlist PDA
@@ -429,19 +429,19 @@ export function appendPolicyLog(
     id: 'private-corridor',
     number: '05',
     title: 'Private remittance corridor (demo)',
-    subtitle: 'Compose compression + confidential amount narrative for a SE Europe → corridor mock — UX only, no KYC vendor.',
+    subtitle: 'Compose compression + confidential amount narrative for a remittance corridor mock — UX only, no KYC vendor.',
     skill: 'combined',
     difficulty: 'advanced',
     timeMinutes: 75,
     stack: ['Token-2022 CT', 'Compressed accounts', 'Solana Pay QR', 'React'],
     problem:
-      'Consumer demand on Solana is skewed to speculation. Regional remittance stories need a credible, privacy-aware demo that still settles on Solana.',
+      'Consumer demand on Solana is skewed to speculation. Remittance-shaped stories need a credible, privacy-aware demo that still settles on Solana.',
     outcome:
       'A corridor UI: sender, recipient, stablecoin mint selector, confidential amount toggle, receipt with tx signature, and a cost line if the receipt PDA is compressed.',
-    balkanAngle:
-      'Diaspora and cross-border SME payment narratives make a strong workshop demo — with a facilitator script in EN and optional local-language one-pager.',
+    workshopAngle:
+      'Diaspora and cross-border SME payment narratives make a strong workshop demo — with a short facilitator script and optional one-pager.',
     ecosystemWhy:
-      'Solana needs diversified demand beyond memecoins. A remittance-shaped teaching app shows compression + confidential amounts composing into a consumer story reviewers and builders can demo in one sitting.',
+      'Solana needs diversified demand beyond memecoins. A remittance-shaped teaching app shows compression + confidential amounts composing into a consumer story mentors and builders can demo in one sitting.',
     prerequisites: [
       'Recipes 01 and 03 complete',
       'Design disclaimer reviewed',

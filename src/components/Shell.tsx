@@ -119,9 +119,9 @@ export function Shell() {
           </p>
         </div>
         <div className="footer-meta">
-          <span>PRIORITY · COMPRESSION + TOKEN EXTENSIONS</span>
+          <span>FOCUS · COMPRESSION + CONFIDENTIAL TRANSFERS</span>
           <span>STACK · ANCHOR · TS · LIGHT · TOKEN-2022</span>
-          <span>END-STATE · CLONE → WORKS · WORKSHOP-READY</span>
+          <span>BAR · CLONE → WORKS · CLI + WORKSHOP-READY</span>
         </div>
       </footer>
       <HelpBot />

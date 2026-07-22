@@ -35,8 +35,8 @@ export function Home() {
             </a>
           </div>
           <p className="trust-row mono">
-            Built on Light Protocol · Token-2022 · MIT open source ·{' '}
-            <Link to="/about">Current state & milestones</Link>
+            Built on Light Protocol · Token-2022 · MIT ·{' '}
+            <Link to="/about">Roadmap</Link>
           </p>
         </div>
 
@@ -59,13 +59,12 @@ export function Home() {
           <div className="status-banner">
             <strong>What works today</strong>
             <span>
-              Recipe book · local Lab · static analysis · export. On-chain
-              happy paths and full awareness pack are Milestone 1–2 — see
-              Roadmap.
+              Recipe book · local Lab · static analysis · export. Live on-chain
+              recipes, CLI, and full workshop pack are on the Roadmap.
             </span>
           </div>
 
-          <div className="instrument" aria-label="Merkle compression metaphor">
+          <div className="instrument" aria-label="Cost comparison teaching card">
             <div className="instrument-head">
               <span>Cost teaching card · illustrative</span>
               <span className="pulse" aria-hidden />
@@ -88,7 +87,7 @@ export function Home() {
               </div>
               <div className="tree-row">
                 <span className="tree-dot" />
-                <span>Pin real deltas on live recipes</span>
+                <span>Pin measured deltas on live recipes</span>
                 <span>devnet</span>
               </div>
             </div>
@@ -101,12 +100,12 @@ export function Home() {
           <div className="section-head">
             <div>
               <p className="eyebrow">The gap</p>
-              <h2>Primitives shipped. Adoption stalls on three concrete pain points.</h2>
+              <h2>Primitives are live. Adoption still stalls on DX.</h2>
             </div>
             <p>
-              Official docs and Light examples exist — they are reference-shaped.
-              Compress Lab is the missing manual: timed operator paths for
-              regular Anchor developers.
+              Official docs and Light examples are strong references. Compress
+              Lab turns them into timed operator paths so everyday Anchor
+              developers can ship without a multi-repo scavenger hunt.
             </p>
           </div>
         </Reveal>
@@ -130,10 +129,10 @@ export function Home() {
             </article>
             <article>
               <div className="num">Pain 03</div>
-              <h3>Scattered repos</h3>
+              <h3>Scattered examples</h3>
               <p>
-                Setup spans Light, Token-2022, and Anchor examples. Happy paths
-                are tribal knowledge, not a weekend checklist.
+                Setup spans Light, Token-2022, and Anchor samples. Happy paths
+                stay tribal knowledge instead of a weekend checklist.
               </p>
             </article>
           </div>
@@ -145,11 +144,11 @@ export function Home() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Cost card</p>
-              <h2>Why compression shows up in every builder narrative.</h2>
+              <h2>Why compression shows up in every scaling story.</h2>
             </div>
             <p>
               Figures below are <strong>teaching aids</strong> from public
-              compression docs/community examples — live recipes will pin
+              compression docs and community examples. Live recipes will pin
               measured lamports from our own devnet runs.
             </p>
           </div>
@@ -169,7 +168,7 @@ export function Home() {
             <div role="row">
               <span>Mass fan-out (N wallets)</span>
               <span>ATA rent × N</span>
-              <span>Batched proofs, sublinear feel</span>
+              <span>Batched proofs, sublinear cost curve</span>
             </div>
             <div role="row">
               <span>Confidential amount</span>
@@ -185,12 +184,12 @@ export function Home() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Live today</p>
-              <h2>Not vaporware — open the Lab.</h2>
+              <h2>Open the Lab — useful before the first on-chain recipe.</h2>
             </div>
             <p>
-              Templates, file upload, static analysis, and export ship
-              in-browser now. Wallet/devnet execution and the full awareness
-              pack are the public milestones on Roadmap.
+              Templates, file upload, static analysis, and export already run
+              in-browser. Devnet execution, CLI, and the full workshop pack are
+              on the Roadmap.
             </p>
           </div>
         </Reveal>
@@ -201,7 +200,7 @@ export function Home() {
               <h3>Five named paths</h3>
               <p>
                 Profiles · airdrop · confidential transfer · permissioned issuer
-                · remittance corridor. Each with steps, gotchas, sketches.
+                · remittance corridor. Each with steps, gotchas, and sketches.
               </p>
             </article>
             <article>
@@ -211,17 +210,17 @@ export function Home() {
               </h3>
               <p>
                 Paste code, drop Anchor files, run Demo Analyze, download
-                starters. Nothing uploaded to a server.
+                starters. Nothing is uploaded to a server.
               </p>
             </article>
             <article>
               <div className="num">03 / Next</div>
               <h3>
-                <Link to="/about">Milestones →</Link>
+                <Link to="/about">Roadmap →</Link>
               </h3>
               <p>
-                Live on-chain paths, failure cookbook, workshop and awareness
-                materials — a full accessible Solana DX toolkit.
+                Live on-chain paths, downloadable CLI, failure cookbook, and
+                written workshop materials — a complete accessible toolkit.
               </p>
             </article>
           </div>
@@ -233,11 +232,11 @@ export function Home() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Ledger</p>
-              <h2>Five recipes. Named. Linked.</h2>
+              <h2>Five recipes. Named and linked.</h2>
             </div>
             <p>
-              Each card: problem-shaped title, primitive, timebox. Open any path
-              for full steps and sketch code.
+              Each card: problem-shaped title, primitive, and timebox. Open any
+              path for full steps and sketch code.
             </p>
           </div>
         </Reveal>
@@ -264,14 +263,14 @@ export function Home() {
         <Reveal>
           <div className="section-head">
             <div>
-              <p className="eyebrow">After funding</p>
-              <h2>What Compress Lab becomes for the ecosystem.</h2>
+              <p className="eyebrow">What comes next</p>
+              <h2>From local toolkit to complete on-ramp.</h2>
             </div>
             <p>
-              A recommendable on-ramp beside official compression and
-              Confidential Transfer docs: CI-honest recipes, workbench tied to
-              explorer links, workshops, and awareness materials that raise
-              adoption of Foundation-priority primitives.
+              The destination is a recommendable surface beside official
+              compression and Confidential Transfer docs: CI-honest recipes,
+              workbench and CLI tied to explorer links, plus written materials
+              that raise adoption of these primitives.
             </p>
           </div>
         </Reveal>
@@ -279,8 +278,8 @@ export function Home() {
           <div className="compare-table">
             <div className="compare-head">
               <span>Surface</span>
-              <span>Now</span>
-              <span>Funded end-state</span>
+              <span>Today</span>
+              <span>Complete toolkit</span>
             </div>
             <div>
               <span>Recipes</span>
@@ -288,19 +287,19 @@ export function Home() {
               <span>Live devnet · pinned SDKs · measured costs</span>
             </div>
             <div>
-              <span>Lab</span>
-              <span>Analyze / export</span>
-              <span>Same UX + runnable happy paths</span>
+              <span>Lab + CLI</span>
+              <span>Analyze / export in browser</span>
+              <span>Same UX + runnable terminal paths</span>
             </div>
             <div>
               <span>Education</span>
               <span>Inline gotchas</span>
-              <span>Failure cookbook + workshop pack</span>
+              <span>Failure cookbook + written workshop pack</span>
             </div>
             <div>
-              <span>Awareness</span>
+              <span>Discoverability</span>
               <span>Site + operator desk</span>
-              <span>Promo kit · recorded walkthrough · start-here path</span>
+              <span>One-pagers · start-here path · ongoing maintenance</span>
             </div>
           </div>
         </Reveal>
@@ -316,7 +315,7 @@ export function Home() {
             <p>
               Restaking, fixed-rate credit, ZK bridges, and licensed compliance
               SaaS need protocol research or legal partners. Compress Lab stays
-              focused on developer education and accessible tooling.
+              focused on developer tooling for compression and privacy.
             </p>
           </div>
         </Reveal>

@@ -9,13 +9,12 @@ export function About() {
     <div className="shell">
       <header className="page-hero">
         <p className="eyebrow">Roadmap · product vision</p>
-        <h1 className="display">From local lab to Solana’s default compression & privacy on-ramp.</h1>
+        <h1 className="display">From local toolkit to Solana’s compression & privacy on-ramp.</h1>
         <p className="lede">
-          Compress Lab is a public-good developer toolkit for ZK Compression and
-          Token-2022 Confidential Transfers. Today it teaches and scaffolds.
-          After successful funding it becomes a fully accessible, CI-honest,
-          awareness-backed surface that any Solana builder can finish in under
-          an hour — without inventing a new proving stack.
+          Compress Lab is developer tooling for ZK Compression and Token-2022
+          Confidential Transfers. Today it teaches and scaffolds. The complete
+          product is a CI-honest, CLI-backed surface any Solana builder can
+          finish in under an hour — without inventing a new proving stack.
         </p>
         <div className="hero-actions">
           <Link to="/lab" className="btn btn-primary">
@@ -33,8 +32,8 @@ export function About() {
           </a>
         </div>
         <div className="page-toolbar">
-          <strong>Public good · MIT · ecosystem DX</strong>
-          <span>Aligns with compression + Token Extensions priorities</span>
+          <strong>MIT · developer tooling · open education</strong>
+          <span>Compression · Confidential Transfers · Token Extensions</span>
         </div>
       </header>
 
@@ -43,13 +42,13 @@ export function About() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Ecosystem role</p>
-              <h2>Why this belongs in Solana’s public-goods layer.</h2>
+              <h2>Why this tooling exists on Solana.</h2>
             </div>
             <p>
-              The Foundation and ecosystem have shipped the hard primitives.
-              Adoption still dies in the gap between reference docs and a
-              working weekend project. Compress Lab fills that gap — the missing
-              manual, not a competing protocol.
+              The hard primitives already shipped. Adoption still dies in the
+              gap between reference docs and a working weekend project. Compress
+              Lab fills that gap — opinionated happy paths, not a competing
+              protocol.
             </p>
           </div>
         </Reveal>
@@ -95,8 +94,8 @@ export function About() {
             </div>
             <p>
               A working education surface and local developer workbench — honest
-              about sketches vs live chain, useful before the first funded
-              signature.
+              about sketches versus live chain, useful before the first on-chain
+              recipe lands.
             </p>
           </div>
         </Reveal>
@@ -137,11 +136,11 @@ export function About() {
         <Reveal>
           <div className="section-head">
             <div>
-              <p className="eyebrow">Funded end-state</p>
-              <h2>What successful funding makes this become.</h2>
+              <p className="eyebrow">Complete toolkit</p>
+              <h2>What Compress Lab becomes at full scope.</h2>
             </div>
             <p>
-              Not a larger landing page — a recommendable Solana DX toolkit that
+              Not a larger landing page — a recommendable Solana toolkit that
               educators, hackathon mentors, and product teams can send to new
               builders with confidence.
             </p>
@@ -152,7 +151,7 @@ export function About() {
             <div className="compare-head">
               <span>Capability</span>
               <span>Today</span>
-              <span>After funding (M1→M2)</span>
+              <span>After Milestone 1→2</span>
             </div>
             <div>
               <span>On-chain recipes</span>
@@ -170,9 +169,9 @@ export function About() {
               <span>Published failure cookbook used in workshops</span>
             </div>
             <div>
-              <span>Awareness</span>
+              <span>CLI & education</span>
               <span>Site + help desk</span>
-              <span>Workshop pack, recorded walkthrough, promo kit</span>
+              <span>Downloadable CLI · written facilitator pack · one-pagers</span>
             </div>
             <div>
               <span>Trust model</span>
@@ -193,11 +192,11 @@ export function About() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Who it serves</p>
-              <h2>Builders the Foundation wants unblocked.</h2>
+              <h2>Who this tooling is for.</h2>
             </div>
             <p>
-              If someone can write Anchor and TypeScript but has never touched
-              compression or confidential balances, this toolkit is for them.
+              If you can write Anchor and TypeScript but have never shipped
+              compression or confidential balances, this toolkit is for you.
             </p>
           </div>
         </Reveal>
@@ -223,7 +222,7 @@ export function About() {
               <div className="num">Educators</div>
               <h3>Teach the primitives</h3>
               <p>
-                Workshop scripts and awareness materials that point back to
+                Written facilitator scripts and one-pagers that point back to
                 Light and Solana docs, not around them.
               </p>
             </article>
@@ -240,8 +239,8 @@ export function About() {
             </div>
             <p>
               Milestone 1 proves live chain paths. Milestone 2 finishes the
-              accessible toolkit and awareness layer so Compress Lab can be
-              recommended ecosystem-wide.
+              accessible toolkit — CLI, written workshop materials, and ongoing
+              maintenance — so Compress Lab can be recommended ecosystem-wide.
             </p>
           </div>
         </Reveal>
@@ -271,14 +270,15 @@ export function About() {
               </h3>
               <p>
                 Compress Lab as a complete on-ramp: core primitives covered,
-                workshops ready, awareness materials in circulation.
+                CLI shipped, written workshop materials ready, maintenance plan
+                in place.
               </p>
               <ul>
-                <li>Remaining core recipes live on devnet (or explicitly gated)</li>
-                <li>Workshop facilitator pack + recorded walkthrough</li>
-                <li>Promotional one-pagers / social kit for ecosystem awareness</li>
+                <li>All five core recipes live on devnet (or explicitly gated)</li>
+                <li>Downloadable CLI + written facilitator pack</li>
+                <li>One-pagers and start-here path next to official docs links</li>
                 <li>Adoption signal: external builders succeeding via recipes</li>
-                <li>“Start here” path documented next to official docs links</li>
+                <li>Ongoing maintenance as Light and Token-2022 clients evolve</li>
               </ul>
             </div>
           </div>
@@ -293,7 +293,7 @@ export function About() {
               <h2>Outcomes that matter after Milestone 2.</h2>
             </div>
             <p>
-              Public goods are judged by use. These are the signals Compress Lab
+              Tooling is judged by use. These are the signals Compress Lab
               optimizes for — not TVL theater.
             </p>
           </div>
@@ -320,8 +320,8 @@ export function About() {
               <div className="num">Reach</div>
               <h3>Workshops & shares</h3>
               <p>
-                Facilitators and mentors reuse the pack; builders find Compress
-                Lab when searching for compression or CT “how do I…”.
+                Mentors reuse the written pack; builders find Compress Lab when
+                searching for compression or CT “how do I…”.
               </p>
             </article>
           </div>

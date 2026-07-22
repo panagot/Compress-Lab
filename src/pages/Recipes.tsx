@@ -9,12 +9,13 @@ export function Recipes() {
     <div className="shell">
       <header className="page-hero">
         <p className="eyebrow">Recipe book</p>
-        <h1 className="display">Operator paths with gotchas included.</h1>
+        <h1 className="display">Timed paths with gotchas included.</h1>
         <p className="lede">
-          Each recipe is a timed path for Anchor/TypeScript builders: problem,
-          ecosystem why, steps, sketch code, verification checklist, and links
-          to upstream Light / Solana docs. Today sketches show structure;
-          Milestone 1 binds them to version-pinned, CI-checked happy paths.
+          Each recipe is an operator path for Anchor and TypeScript builders:
+          problem, why it matters on Solana, steps, sketch code, verification
+          checklist, and links to upstream Light / Solana docs. Today sketches
+          show structure; the Roadmap binds them to version-pinned, runnable
+          happy paths.
         </p>
         <div className="page-toolbar">
           <strong>
@@ -33,7 +34,7 @@ export function Recipes() {
               <p>
                 Start with rent-free profiles if state cost hurts; confidential
                 transfer if amounts must hide; permissioned rails if you need
-                freeze/default-state demos.
+                freeze or default-state demos.
               </p>
             </article>
             <article>
@@ -41,15 +42,15 @@ export function Recipes() {
               <h3>01 → 03 → 02</h3>
               <p>
                 RPC mental model first, then CT pending balance, then batch
-                fan-out. Corridor (05) composes earlier paths for workshops.
+                fan-out. Corridor (05) composes earlier paths for demos.
               </p>
             </article>
             <article>
-              <div className="num">After funding</div>
+              <div className="num">On the roadmap</div>
               <h3>Clone → explorer link</h3>
               <p>
-                Same titles — live signatures, measured cost cards, and failure
-                cookbook entries for every core path.
+                Same titles — live signatures, measured cost cards, CLI
+                commands, and failure-cookbook entries for every core path.
               </p>
             </article>
           </div>
@@ -82,8 +83,8 @@ export function Recipes() {
               <h2>Primitives these recipes unlock.</h2>
             </div>
             <p>
-              Together they form a minimal curriculum for Foundation-priority
-              DX: cheap state, private amounts, and controllable token rails.
+              Together they form a minimal curriculum for cheap state, private
+              amounts, and controllable token rails on Solana.
             </p>
           </div>
         </Reveal>
@@ -102,16 +103,18 @@ export function Recipes() {
                   </Link>
                 </span>
                 <span>{skillLabel[r.skill]}</span>
-                <span>{r.timeMinutes} min path · {r.difficulty}</span>
+                <span>
+                  {r.timeMinutes} min path · {r.difficulty}
+                </span>
               </div>
             ))}
           </div>
         </Reveal>
         <Reveal delay={70}>
           <p className="lede" style={{ marginTop: '1.75rem' }}>
-            Pair any recipe with the{' '}
-            <Link to="/lab">Lab workbench</Link> to load a template, analyze
-            your draft, and export starters before you touch a wallet.
+            Pair any recipe with the <Link to="/lab">Lab workbench</Link> to
+            load a template, analyze your draft, and export starters before you
+            touch a wallet.
           </p>
         </Reveal>
       </section>

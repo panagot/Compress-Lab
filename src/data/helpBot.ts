@@ -84,7 +84,7 @@ export const helpArticles: HelpArticle[] = [
     id: 'stack',
     question: 'What should I install locally?',
     answer:
-      'Solana CLI, Anchor, Node/npm, a funded devnet wallet, and a compression-aware RPC URL. Pin Light and @solana/spl-token versions in your README when you leave the sketch stage.',
+      'Solana CLI, Anchor, Node/npm, a devnet wallet with SOL for fees, and a compression-aware RPC URL. Pin Light and @solana/spl-token versions in your README when you leave the sketch stage.',
     tags: ['install', 'anchor', 'setup'],
     href: '/recipes',
     hrefLabel: 'All recipes',
@@ -99,11 +99,11 @@ export const helpArticles: HelpArticle[] = [
     hrefLabel: 'Lab export',
   },
   {
-    id: 'funded',
+    id: 'complete',
     question: 'What does Compress Lab become when complete?',
     answer:
-      'A recommendable Solana DX on-ramp: CI-honest live recipes for compression and Confidential Transfers, workbench tied to explorer links, failure cookbook, workshop pack, and awareness materials — sitting beside official docs, not replacing them.',
-    tags: ['roadmap', 'ecosystem', 'foundation'],
+      'A recommendable Solana DX on-ramp: CI-honest live recipes for compression and Confidential Transfers, workbench and CLI tied to explorer links, failure cookbook, and a written facilitator pack — sitting beside official docs, not replacing them.',
+    tags: ['roadmap', 'ecosystem', 'toolkit'],
     href: '/about',
     hrefLabel: 'Roadmap',
   },

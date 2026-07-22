@@ -13,7 +13,7 @@ type Msg = {
 const welcome: Msg = {
   id: 'welcome',
   role: 'bot',
-  text: 'Field desk for Solana builders. Ask about compression RPC, confidential transfers, the Lab workbench, or grant scope — or pick a prompt below.',
+  text: 'Field desk for Solana builders. Ask about compression RPC, confidential transfers, the Lab workbench, or the roadmap — or pick a prompt below.',
   articles: helpArticles.slice(0, 4),
 }
 
@@ -56,7 +56,7 @@ export function HelpBot() {
       text:
         hits.length > 0
           ? 'Matched operator notes:'
-          : 'No direct match. Try “RPC”, “pending balance”, “Circom”, “export”, or “grant”.',
+          : 'No direct match. Try “RPC”, “pending balance”, “Circom”, “export”, or “roadmap”.',
       articles: hits.length ? hits : helpArticles.filter((a) => a.id === 'lab-tools' || a.id === 'stack'),
     }
     setMsgs((m) => [
