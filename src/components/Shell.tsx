@@ -37,7 +37,7 @@ export function Shell() {
             <img className="brand-mark" src="/mark.svg" alt="" />
             <span className="brand-text">
               <strong>Compress Lab</strong>
-              <span>Solana DX</span>
+              <span>ZK Compression & Privacy</span>
             </span>
           </NavLink>
 
@@ -100,10 +100,9 @@ export function Shell() {
         <div>
           <strong>Compress Lab</strong>
           <p>
-            Public-good Solana DX for ZK Compression (Light) and Token-2022
-            Confidential Transfers — recipes, local workbench, and a path to a
-            full accessible toolkit. Teaching layer only; official docs stay
-            canonical.
+            Developer tooling for Solana ZK Compression and privacy — recipes,
+            local workbench, and a path to a full accessible toolkit. Teaching
+            layer only; official docs stay canonical.
           </p>
           <p style={{ marginTop: '0.85rem' }}>
             <NavLink to="/recipes">Recipes</NavLink>

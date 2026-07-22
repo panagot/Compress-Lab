@@ -10,14 +10,14 @@ export function Home() {
     <>
       <section className="shell hero">
         <div>
-          <p className="eyebrow">Solana · developer education · public good</p>
-          <h1 className="display">Turn multi-day ZK integrations into weekend recipes.</h1>
+          <p className="eyebrow">Compress Lab · Solana · open source</p>
+          <h1 className="display">Developer tooling for ZK Compression &amp; Privacy.</h1>
           <p className="lede">
-            Compress Lab is an open toolkit for Anchor/TypeScript builders:
-            opinionated recipes for ZK Compression (Light) and Token-2022
-            Confidential Transfers, plus a <strong>live local workbench</strong>{' '}
-            (paste, upload, analyze, export). We curate the happy path — we do
-            not reinvent Light or invent Circom for you.
+            Help Anchor and TypeScript builders ship Light Protocol compression
+            and Token-2022 Confidential Transfers in hours, not days. Open
+            recipes, a <strong>live local workbench</strong> (paste, upload,
+            analyze, export), and a path to a downloadable CLI — the happy path
+            next to official docs, not a new proving stack.
           </p>
           <div className="hero-actions">
             <Link to="/lab" className="btn btn-primary">
